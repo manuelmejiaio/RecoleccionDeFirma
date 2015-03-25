@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Thanks";
+}
+
+<div class="col-md-10 col-md-offset-1 ">
+    <div class="panel panel-default " style="border:6px solid #663096">
+        <div style="background: #663096" class="panel-heading"><h2 style="color:white"><b>Firma por 4 años mas de progreso.</b></h2></div>
+        <div style="padding:8px">
+            <h4>Convocatoria a referéndum aprobatorio y se modifique la Constitución para que Danilo Medina pueda ser candidato en las elecciones presidenciales de 2016.</h4>
+        </div>
+        <div class="panel-body col-md-12 col-sm-12 text-center">
+            <h1>Gracias!</h1>
+            <br />
+            <a class="btn btn-lg btn-success" href='@Url.Action("Create", "Firma")'>Nueva Firma</a>
+        </div>
+        <div class="panel-footer">
+            .
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+$(document).ready(function(){
+    $("#cedula").click(function () {
+        $("#cedulaError").addClass("hidden");
+    });
+});
+    </script>
+}
